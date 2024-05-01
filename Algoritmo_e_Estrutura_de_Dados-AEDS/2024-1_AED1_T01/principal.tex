@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% Template de Artigo Adaptado para Trabalho de Diplomação do ICEI %%%%%%%%%%%%%%%%%%%%%%%%
+%% codificação UTF-8 - Abntex - Latex -  							     %%
+%% Autor:    Fábio Leandro Rodrigues Cordeiro  (fabioleandro@pucminas.br)                            %% 
+%% Co-autor: Prof. João Paulo Domingos Silva, Harison da Silva e Anderson Carvalho                   %%
+%% Revisores normas NBR (Padrão PUC Minas): Helenice Rego Cunha e Prof. Theldo Cruz                  %%
+%% Versão: 1.1     18 de dezembro 2015                     	                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[a4paper,12pt,Times]{article}
+\usepackage{abakos}  %pacote com padrão da Abakos baseado no padrão da PUC
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Capa da revista
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\setcounter{page}{80} %iniciar contador de pagina de valor especificado
+\newcommand{\monog}{Três Tipos Lógicos de Pesquisa}
+\newcommand{\monogES}{Uma análise do discurso de Gilson Volpato}
+\newcommand{\tipo}{Artigo }  % Especificar a seção tipo do trabalho: Artigo, Resumo, Tese, Dociê etc
+\newcommand{\origem}{Brasil }
+\newcommand{\editorial}{Belo Horizonte, p. 01-11, nov. 2015}  % p. xx-xx – páginas inicial-final do artigo
+\newcommand{\lcc}{\scriptsize{Licença Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported}}
+
+%%%%%%%%%%%%%%%%%INFORMAÇÕES SOBRE AUTOR PRINCIPAL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\AutorA}{Bernardo Ladeira Kartabil}
+\newcommand{\funcaoA}{}
+\newcommand{\emailA}{bernardo.kartabil@sga.pucminas.br}
+\newcommand{\cursA}{Aluno do Programa de Graduação em Ciência da Computação}
+% 
+% Definir macros para o nome da Instituição, da Faculdade, etc.
+\newcommand{\univ}{Pontifícia Universidade Católica de Minas Gerais}
+
+\newcommand{\keyword}[1]{\textsf{#1}}
+
+\begin{document}
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% %% Pagina de titulo
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\includegraphics[scale=0.2]{figuras/brasao.jpg} \\
+PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS \\
+Instituto de Ciências Exatas e de Informática
+
+% \vspace{1.0cm}
+
+\end{center}
+
+ \vspace{0cm} {
+ \singlespacing \Large{\monog \symbolfootnote[1]{Artigo apresentado ao Instituto de Ciências Exatas e Informática da Pontifícia Universidade Católica de Minas Gerais como pré-requisito para obtenção do título de Bacharel em Ciência da Computação.} \\ }
+  \normalsize{\monogES}
+ }
+
+\vspace{1.0cm}
+
+\begin{flushright}
+\singlespacing 
+\normalsize{\AutorA \footnote{\funcaoA \cursA, \origem -- \emailA . }} \\
+
+%\normalsize{\AutorC \footnote{\funcaoC \cursC, \origem -- \emailC . }} \\
+%\normalsize{\AutorD \footnote{\funcaD \cursD, \origem -- \emailD . }} \\
+%deixar com o valor `0` e usar o '*' no inicio da frase
+% \symbolfootnote[0]{Artigo recebido em 10 de julho de 1983 e aprovado em 29 de maio 2012}
+\end{flushright}
+\thispagestyle{empty}
+
+\vspace{1.0cm}
+
+\begin{abstract}
+\noindent
+
+O texto discute três tipos lógicos de pesquisa: descrição, associação e associação com interferência. Na descrição, uma variável é analisada isoladamente. Na associação, variáveis são relacionadas sem interferência direta. Já na associação com interferência, busca-se entender o mecanismo que une as variáveis.
+\\\textbf{\keyword{Palavras-chave: }} Pesquisa. Associação. Interferência. Variáveis
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ \newpage    %%%% CASO QUEIRA QUE O RESUMO FIQUE EM UMA PAGINA E O ABSTRACT EM OUTRA
+\selectlanguage{english}
+\begin{abstract}
+\noindent
+The text discusses three logical types of research: description, association and association with interference. In the description, a variable is analyzed in isolation. In association, variables are related without direct interference. In the association with interference, we seek to understand the mechanism that unites the variables.
+\\\textbf{\keyword{Keywords: }} research. Association. Interference. Variables
+\end{abstract}
+
+\selectlanguage{brazilian}
+ \onehalfspace  % espaçamento 1.5 entre linhas
+ \setlength{\parindent}{1.25cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% INICIO DO TEXTO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{textos}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% FIM DO TEXTO
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \selectlanguage{brazil}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Inicio bibliografia
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ \newpage
+\singlespace{
+\renewcommand\refname{REFERÊNCIAS}
+\bibliographystyle{abntex2-alf}
+\bibliography{bibliografia}
+
+}
+
+\end{document}
+
+

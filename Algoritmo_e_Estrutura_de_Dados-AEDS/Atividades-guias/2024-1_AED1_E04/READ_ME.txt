@@ -1,0 +1,1 @@
+Olá professor, tive dificulade nas 3 últimas, pois não sabia muito bem como juntar uma sequência alfanumérica, buscar os termos e mostrá-los do jeito correto.
