@@ -1,0 +1,11 @@
+5
+1 Mercado São Paulo
+2 Mercado Rio de Janeiro
+3 Mercado Brasília
+4 Mercado Belo Horizonte
+5 Mercado Porto Alegre
+10.50
+12.80
+11.20
+9.80
+13.50

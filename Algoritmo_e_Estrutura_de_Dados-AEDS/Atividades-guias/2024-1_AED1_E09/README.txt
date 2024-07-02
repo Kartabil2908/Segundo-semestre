@@ -1,0 +1,1 @@
+    Professor, a questão 9 e 10 eu tive dificuldade de entender, eu até tentei usar o chat gpt, mas não consegui compreender o que ele fez. Então não fiz elas!
