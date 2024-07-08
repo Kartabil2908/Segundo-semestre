@@ -1,0 +1,1 @@
+Essa pasta contém minhas resoluções da prova terceira prova antiga do professor. Fiz com o intuito de revisar o conteúdo e estudar para minha prova.Não colocarei fotos,pois a prova é um documento.
